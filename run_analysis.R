@@ -73,6 +73,9 @@ for (i in 1:nrow(alldata2)) {
   }
 }
 
+#write out the final data in case we want it
+write.csv(alldata2,'cleaneddata.csv',row.names=FALSE)
+
 #now to wrap up with step 5. get average of each variable for each subject for each activity
 #loop through each variable, but not subnum and activity
 finaldata=NULL
